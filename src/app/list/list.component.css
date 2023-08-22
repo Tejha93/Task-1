@@ -1,0 +1,30 @@
+
+table {
+    font-family: "raleway";
+    border-collapse: collapse;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+    padding: 50px;
+    box-shadow: 5px 10px #888888;
+   
+  }
+
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+    height: 20px;
+    background-color: #fff;
+  }
+  td{
+    background-color: white;
+  }
+  
+ 
+  .cross-icon{
+    margin-left: 15px;
+    cursor: pointer;
+
+  }

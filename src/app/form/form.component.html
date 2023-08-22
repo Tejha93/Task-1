@@ -1,0 +1,34 @@
+<div class="form-container">
+  <h4>Student Form</h4>
+  <input
+    class="input-box"
+    type="text"
+    placeholder="Enter student name"
+    [(ngModel)]="studentName"
+  />
+  <input
+    class="input-box"
+    type="text"
+    placeholder="Enter student id"
+    [(ngModel)]="studentId"
+  />
+  <input
+    class="input-box"
+    type="text"
+    placeholder="Enter student class"
+    [(ngModel)]="studentClass"
+  />
+  <div>
+    <textarea
+      name=""
+      id=""
+      cols="35"
+      rows="5"
+      placeholder="Enter the Address"
+      [(ngModel)]="address"
+      class="text-area"
+    ></textarea>
+  </div>
+  <button class="save-btn" (click)="saveIntoTable()">save</button>
+  <p>*Note: The Data saved from this form will be updated to List</p>
+</div>

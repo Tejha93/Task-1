@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <th>S.no</th>
+    <th>Student-name</th>
+    <th>Student-id</th>
+    <th>Student-class</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let data of dataArray; let i = index">
+    <td>{{ i + 1 }}</td>
+    <td>{{ data.studentName }}</td>
+    <td>{{ data.studentId }}</td>
+    <td>{{ data.studentClass }}</td>
+    <td>{{ data.address }}</td>
+
+    <td>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAASFBMVEX////+AAD+///+hIT+dnb+ODj+fX3+goL+f3/+pqb+Wlr+QED+MzP+V1b+mZr+TU3+9/f+kZH+8fD+0ND+Hx/9Dw7/wcL+1texxf7XAAAD9UlEQVRoge1b7ZKqMAylRRR1xW99/ze9sIBCaJuTpDs7O9fj3ybHtEmbpqEoPvjgf4Pvfj6ftl4hMPT0qCt3PzRXaDSLa3O4u6p+nHht25sbcHyauf3zOGq7bZmxl52boLFx+6KZattdksx7N0Npoi7KubZ9gvv05Qhqg92+ptq+Tjizcys982qpLcZ9CTC33NowCzC33ME5p+tsm/PlbPcIrvcuPLb1NQW338S07ZaDt7GxGm5fxrUt4vt0iw92m2w2t7hRV3skBju3llGvk8oe5H9GvGIEHmNtQAR9+w3qt1V6uMTutM3OVWQ8Mxxf7+Q69yACd1YA8/OUbw+4E4kDKwGdJYDN7kBEGl7E1Twzt84dGiJ0BWR4P2d8u8eV/t8jL9P6eXK9IZvdcSH2RMSSfo6sc4vnUhJZ7YSvecC3O4SSLlA0FmMWcV8wm+mATThJxoSjhz/koME9FfOwNuWJMKPcK2K31wrOlOimDbR5kw5N0FnmQlhUsRuxnNsYGhNgJrz3FtBm6NDFFm495OfgOq+he2vo2hDAECjoYPAmgQZpC4wZvkZ40Neq85lL6XpENsAwMG4QoisEegxhzNLCDLavAeDTqgUwB2KRODFi8KCfMxBemUZybJtKYqMrDKAxlkD5Xa9TwchdGmqOtjkX7SRLboOvpZN2AOoYU5ee3lDabSn2jdCtd5mnrqzwc03BKw+3cicJQbjeihMjCjAZGZDBt6cQcHcnRk5uj6VCLaq8NrfUZ5T6nJlZQp2ZWTThmZkFbqZ/swhCFlwZiaVHp/m4fEN8gEhr9xGorgPGt7mRWndo5phzbapg3kxlB8cUNj/3aps7YIWEKLfp0mdJGKxXXb2f2y/ZWj+3zXYP3d6i9+0p1pr1znW1F5tsuWzNId5bMlzrR8h8LWcBSRRjHjwx8JIdbjdaoIXDAC7m/ER5FptuzObhXoXWuKCcCaysv7YKtBTPcgteE166NO8lS2L0BWW+PWbhBh+b6EMXKpYwWuTbOQSFCoKHEfhmESEGpy2yJWNOEi5pwQ97YWrVu+C3oPnpHPXz5dM52jCQSjrAhgGqAWyTiPN2wNokKDXWHMIkWliI0OYQqCWGr+kjQUJbYpBGIODwQfz8QLbCTO1PyHvJnSgCmLEsR970xSVZNdZm3UHY6salJpI3Os7P6WbKtDWKri+MHaSt8TebOX26hVV6Z0u1sC51ZW3cjXPvAmbE2pWVZQlJu7KPNGnrijGRRtZwk3akNV1fiRG0pocb8g0FKEFDfuAzBFPFj54l+0tKHfn4wkLcJZqCjy+K+ScnNuYOs09O2Cl8f2iTBa8PbaDR3b/L+Fjl9Q0LH3zwh/EPTdcpDEfNz7wAAAAASUVORK5CYII="
+        alt="cross"
+        width="17px"
+        height="17px"
+        class="cross-icon"
+        (click)="deleteData(i)"
+      />
+    </td>
+  </tr>
+</table>
